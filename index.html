@@ -225,18 +225,11 @@
 
 
     image.addEventListener('click', () => {
-
-
-      image.style.display = 'none';
-
-
-      video.style.display = 'block';
-
-
-      video.play();
-
-
-    });
+  image.style.display = 'none';
+  video.style.display = 'block';
+  video.play();
+  video.requestFullscreen(); // Diese Zeile sorgt für den Vollbildmodus
+});
 
 
 
