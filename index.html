@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+
+
+<html lang="de">
+
+
+<head>
+
+
+  <meta charset="UTF-8" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <title>Happy Birthday Lina</title>
+
+
+  <style>
+
+
+    body {
+
+
+      margin: 0;
+
+
+      font-family: 'Segoe UI', sans-serif;
+
+
+      background: url('https://www.transparenttextures.com/patterns/flower.png'), linear-gradient(to right, #fdf6f0, #f3e8f7);
+
+
+      background-size: cover;
+
+
+      background-repeat: repeat;
+
+
+      display: flex;
+
+
+      flex-direction: column;
+
+
+      align-items: center;
+
+
+      justify-content: flex-start;
+
+
+      min-height: 100vh;
+
+
+      padding: 20px;
+
+
+      box-sizing: border-box;
+
+
+      color: #5a3e36;
+
+
+    }
+
+
+
+
+
+    h1 {
+
+
+      font-size: 2.2em;
+
+
+      text-align: center;
+
+
+      margin: 30px 0 20px;
+
+
+      line-height: 1.3;
+
+
+    }
+
+
+
+
+
+    .image-container {
+
+
+      width: 100%;
+
+
+      max-width: 350px;
+
+
+      margin-top: 10px;
+
+
+    }
+
+
+
+
+
+    .image-container img {
+
+
+      width: 100%;
+
+
+      height: auto;
+
+
+      border-radius: 20px;
+
+
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+
+      cursor: pointer;
+
+
+      transition: transform 0.3s ease;
+
+
+    }
+
+
+
+
+
+    .image-container img:active {
+
+
+      transform: scale(0.97);
+
+
+    }
+
+
+
+
+
+    #video {
+
+
+      display: none;
+
+
+      width: 100%;
+
+
+      max-width: 360px;
+
+
+      margin-top: 20px;
+
+
+      border-radius: 20px;
+
+
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+
+    }
+
+
+  </style>
+
+
+</head>
+
+
+<body>
+
+
+  <h1>Happy Birthday Lina</h1>
+
+
+
+
+
+  <div class="image-container">
+
+
+    <img id="startImage" src="https://drive.google.com/uc?export=view&id=11nEtydU8MQzyXJlMyzep4FQwHhk6se0h" alt="Klick mich!" />
+
+
+  </div>
+
+
+
+
+
+  <video id="video" controls playsinline>
+
+
+    <source src="https://drive.google.com/uc?export=download&id=11nEtydU8MQzyXJlMyzep4FQwHhk6se0h" type="video/mp4">
+
+
+    Dein Browser unterstützt dieses Video nicht.
+
+
+  </video>
+
+
+
+
+
+  <script>
+
+
+    const image = document.getElementById('startImage');
+
+
+    const video = document.getElementById('video');
+
+
+
+
+
+    image.addEventListener('click', () => {
+
+
+      image.style.display = 'none';
+
+
+      video.style.display = 'block';
+
+
+      video.play();
+
+
+    });
+
+
+
+
+
+    video.addEventListener('ended', () => {
+
+
+      window.location.href = 'https://booking.7paintings.com/bonn?click_id=c48dca5c-a538-4932-9a2c-1a4a51f781ac&_gl=1vtt3hy_gaMTgyODgxOTY5NS4xNzUyMDQxMTk3_ga_481YQY1KNWczE3NTIwNDExOTckbzEkZzAkdDE3NTIwNDEyMDAkajYwJGwwJGg3MTUyNTU1Njk._gcl_awR0NMLjE3NTIwNDExOTcuRUFJYUlRb2JDaE1JczZuWmhvNnZqZ01WQXFTREJ4MzlwaUc4RUFBWUFTQUFFZ0xlY1BEX0J3RQ.._gcl_au*MTY1NjA5MTExOS4xNzUyMDQxMjAw';
+
+
+    });
+
+
+  </script>
+
+
+</body>
+
+
+</html>
